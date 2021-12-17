@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hàm cocat dùng để nối hau mảng dữ liệu</title>
+</head>
+<body>
+<script>
+        //Hàm Concat dùng để nối hi mảng dữ liệu
+        //vd1
+        let a=['cade'];
+        let b=['gym'];
+        let c=a.concat(b);
+        console.log(c);
+
+        //vd2
+        let arrs=[
+            {
+                id:1,
+                name:'tran binh an'
+            },
+            {
+                id:2,
+                name:'nguyen ngoc diep'
+            }
+        ]
+        let arrs2=[
+            {
+                id:3,
+                name:'tran thanh binh'
+            },
+            {
+                id:4,
+                name:'trinh thị minh'
+            }
+        ]
+        var newArrs = arrs.concat(arrs2);
+        console.log(newArrs);
+</script>
+</body>
+</html>

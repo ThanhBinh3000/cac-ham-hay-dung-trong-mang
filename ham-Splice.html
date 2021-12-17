@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hàm splice dùng để xóa các phần tử trong mảng</title>
+</head>
+<body>
+<script>
+    // hàm Splice để xóa  hoặc nhiều phần tử trong mảng
+    //vd1
+    let arrs =["code","gym","vn"];
+    console.log(arrs);
+    arrs.splice(1,1);//số 1,1 sẽ xóa chư gym nếu là 1,2 thì sẽ xóa gym và vn
+    console.log(arrs);
+    //vd2
+    let students=[
+        {
+            id:1,
+            name:'tran binh an',
+            address:'ha noi'
+        }
+    ]
+    console.log(students);
+    for (let i=0;i<students.length;i++){
+        if (students[i].id==2){
+            students.splice(1,1);
+        }
+    }
+    console.log(students);
+</script>
+</body>
+</html>
